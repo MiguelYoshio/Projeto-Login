@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midiaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                foto
+             
 
             </div>
 
@@ -18,6 +20,26 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) faça login para acessar sua conta e poder fazer as configuraçoes do ambiente</p>
                 <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+                        <input type="email" name="iemail" id="email" required>
+                        <label for="email">E-MAIL</label>
+                    </div>
+                    <div class="campo">
+
+                        <span class="material-symbols-outlined">
+                            bring_your_own_ip
+                        </span>
+
+                        <input type="password" name="isenha" id="senha" required minlength="8">
+
+                        <label for="senha">SENHA</label>
+                    </div>
+                    <input type="submit" value="ENVIAR" >
+                    
+                    <a href="esqueciaasenha.html" class="botao">ESQUECI A SENHA</a>
 
                 </form>
 
